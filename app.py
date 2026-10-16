@@ -117,7 +117,7 @@ with st.sidebar:
     st.header("Pengaturan Gokil Live Action")
     key = get_key()
     st.write("Gemini API:", "✅ Terhubung" if key else "⚠️ Belum diatur")
-    model = st.text_input("Model Gemini", "gemini-3.1-PRO")
+    model = st.text_input("Model Gemini", "gemini-4-argon")
     language_pick = st.selectbox("Bahasa cerita & dialog", LANGUAGES, index=0)
     if language_pick == "Bahasa lain (isi sendiri)":
         language = st.text_input("Masukkan bahasa", "English") or "English"
